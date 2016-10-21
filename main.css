@@ -5,9 +5,18 @@
 #nav-left{
 	float : left;
 	background-color : green;
-	text-align : center;
+	text-align : left;
+	 
 	width: 200px;
 }
+#nav-left li{
+	background-color : pink;
+}
+
+#nav-left li:hover{
+	background-color : yellow;
+}
+
 #nav-right {
 	float : right;
 	background-color : red;
