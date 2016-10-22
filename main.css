@@ -1,30 +1,84 @@
+html body{
+	position : absolute;
+	right : 200px;
+	left : 200px;
+	background-color : #FFDAB9;
+}
+
 #header{
-	background-color : blue;
+	display : inline-block;
+	width : 100%;
 }
 
 #nav-left{
 	float : left;
-	background-color : green;
-	text-align : left;
-	 
-	width: 200px;
-}
-#nav-left li{
-	background-color : pink;
+	text-align : center;
+	width: 15%;
+	height : 100%;
 }
 
-#nav-left li:hover{
-	background-color : yellow;
+#nav-left a{
+	display : block;
+	width : 150px;
+	line-height : 50px;
+	text-align : center;
+	vertical-align : middle;
+	background : url("Pictures/boutonnoir.png") no-repeat;
+	color : white;
+	text-decoration : none;
+}
+
+#nav-left a:hover{
+	background : url("Pictures/boutonnoir2.png") no-repeat;
 }
 
 #nav-right {
 	float : right;
-	background-color : red;
-	width: 200px;
+	width: 210px;
+	text-align : center;
 }
 
 #nav-mid{
 	overflow: hidden;
-	background-color : yellow;
+	text-align : justify;
+	font-size : 16px;
+	font-family : Arial;
 }
 
+#salle{
+	height : 350px;
+	width : 550px;
+	display : block;
+	margin : auto;
+}
+
+#labo{
+	height : 250px;
+	width : 450px;
+	float : left;
+}
+
+#image{
+	float : right;
+	height : 150px;
+	width : 85%;
+}
+
+#logo{
+	float : left;
+	height : 150px;
+	width : 15%;
+}
+
+#ferme{
+	color : red;
+}
+
+#ouvert{
+	color : green;
+}
+
+.jours{
+	font-family : Impact;
+	font-size : 16px;
+}
