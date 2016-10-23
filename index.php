@@ -16,7 +16,7 @@
 			<div id="nav-left">
 				
 					<a href="index.php">Accueil</a><br />
-					<a href="connexion.php">Se connecter</a><br />
+					<a href="connexion.php">S'identifier</a><br />
 					<a href="#">Actualités</a><br />
 					<a href="#">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
@@ -53,6 +53,8 @@
 					</p>
 				</div>
 
+				<br />
+
 				<table border="0">
 					<tr>
 						<td class="jours">Lundi</td>
@@ -72,6 +74,14 @@
 					<tr>
 						<td class="jours">Vendredi</td>
 						<td>: 9h à 17h</td>
+					</tr>
+					<tr>
+						<td class="jours">Samedi</td>
+						<td>: Fermé</td>
+					</tr>
+					<tr>
+						<td class="jours">Dimanche</td>
+						<td>: Fermé</td>
 					</tr>
 				</table>
 	

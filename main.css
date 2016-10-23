@@ -38,7 +38,7 @@ html body{
 
 #nav-right {
 	float : right;
-	width: 210px;
+	width: 220px;
 	text-align : center;
 }
 
@@ -87,4 +87,17 @@ html body{
 .jours{
 	font-family : Impact;
 	font-size : 16px;
+}
+
+#nav-mid-connexion{
+	text-align : center;
+}
+
+#formulaire{
+	display : block;
+	margin : auto;
+	border : solid;
+	height : 300px;
+	width : 400px;
+	background-color : white;
 }
