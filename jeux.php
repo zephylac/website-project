@@ -9,35 +9,18 @@ require_once('function/db_controller.php');
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
+	<form id="formulaire" method="post" action="#">
+	  <select>
+  		<option value="TypeJeux">Type de jeux</option>
+  		<option value="Nom">Nom</option>
+  		<option value="Ages">Age</option>
+  		<option value="NbJeux">Jeux au total</option>
+		<option value="NbJeuxDispos">Jeux Disponibles</option>
+	  </select>
+	</form>
+	  <input type="submit" value="filter"/><br />
     <table id="table-jeux">
-			<?php
-        $result = db_request("SELECT * FROM `Jeux` NATURAL JOIN `JeuxLudotheque`);
-				while ($i < mysql_num_fields($result)){
-          $fieldName = mysql_field_name($result, $i);
-          //Here we can add filter if we don't want to show some column.
-          echo '<th>' . $fieldName . '</th>';
-          $i = $i + 1;
-        }
-        echo '</tr>';
-        $i = 0;
-
-        while ($row = mysql_fetch_row($result)){
-          echo '<tr>';
-          $count = count($row);
-          $y = 0;
-          while ($y < $count)
-          {
-                  $c_row = current($row);
-                  //Here we can add filter if we don't want to show some column
-                  echo '<td>' . $c_row . '</td>';
-                  next($row);
-                  $y = $y + 1;
-          }
-          echo '</tr>';
-          $i = $i + 1;
-        }
-        mysql_free_result($result);
-    	?>
+			<?php  include './function/get_item.php';?>
 		</table>
 	</div>
 </div>
