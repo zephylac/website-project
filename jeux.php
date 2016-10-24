@@ -10,7 +10,7 @@ require_once('function/db_controller.php');
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
     <?php
-        $result = db_request("SELECT * FROM `Jeux`);
+        $result = db_request("SELECT * FROM `Jeux` NATURAL JOIN `JeuxLudotheque`);
 				while ($i < mysql_num_fields($result)){
           $fieldName = mysql_field_name($result, $i);
           //Here we can add filter if we don't want to show some column.
