@@ -9,7 +9,8 @@ require_once('function/db_controller.php');
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-    <?php
+    <table id="table-jeux">
+			<?php
         $result = db_request("SELECT * FROM `Jeux` NATURAL JOIN `JeuxLudotheque`);
 				while ($i < mysql_num_fields($result)){
           $fieldName = mysql_field_name($result, $i);
@@ -36,10 +37,10 @@ require_once('function/db_controller.php');
           $i = $i + 1;
         }
         mysql_free_result($result);
-    ?>
-
-			</div>
-		</div>
+    	?>
+		</table>
+	</div>
+</div>
 		
 		<div id="footer">
 			<p><center>Mentions légales|Charte de confidentialité|Plan du site</p>
