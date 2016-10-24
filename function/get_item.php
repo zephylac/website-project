@@ -1,5 +1,6 @@
 <?php
-	if(!isset($_POST["filtre"])){
+	if(!isset($_POST["filter"])){
+		//If there is no filter given, it will be sorted by DEFAULT whith the following value
 		$order = 'TypeJeux';	
 	}
 	else{
