@@ -29,13 +29,13 @@
 					
 							//Test si la ludothèque est en ce moment ouverte ou fermé
 							if(strcmp($jour,'Monday') == 0 && ($h >= 9 || $h <= 17))
-								echo "Ouvert<br />";
+								echo '<p id="ouvert">Ouvert<br /></p>';
 							else if(strcmp($jour,'Tuesday') == 0 && ($h >= 9 || $h <= 17))
-								echo "Ouvert<br />";
+								echo '<p id="ouvert">Ouvert<br /></p>';
 							else if(strcmp($jour,'Wednesday') == 0 && ($h >= 9 || $h <= 12 || $h >= 14 || $h <= 17))
-								echo "Ouvert<br />";
+								echo '<p id="ouvert">Ouvert<br /></p>';
 							else if(strcmp($jour,'Thursday') == 0 && ($h >= 9 || $h <= 17))
-								echo "Ouvert<br />";
+								echo '<p id="ouvert">Ouvert<br /></p>';
 							else if(strcmp($jour,'Friday') == 0 && ($h >= 9 || $h <= 17))
 								echo '<p id="ouvert">Ouvert<br /></p>';
 							else echo '<p id="ferme">Fermé<br /></p>';
