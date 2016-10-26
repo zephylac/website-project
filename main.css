@@ -2,7 +2,14 @@ html body{
 	position : absolute;
 	right : 5%;
 	left :  5%;
+}
+
+html{
 	background-color : #FFDAB9;
+}
+
+body{
+	background-color : white;
 }
 
 #header{
@@ -76,17 +83,16 @@ html body{
 	width : 15%;
 }
 
-#ferme{
+.ferme{
 	color : red;
 }
 
-#ouvert{
+.ouvert{
 	color : green;
 }
 
 .jours{
-	font-family : Impact;
-	font-size : 16px;
+	font-weight : bold;
 }
 
 #nav-mid-connexion{
@@ -94,10 +100,34 @@ html body{
 }
 
 #formulaire{
+	size: 22px;
 	display : block;
 	margin : auto;
 	border : solid;
 	height : 300px;
 	width : 400px;
 	background-color : white;
+}
+
+.case{
+	display : block;
+	margin : auto;
+	width : 300px;
+}
+
+.form{
+	font-size : 16px;
+	font-weight : bold;
+}
+
+#bouton{
+	display : block;
+	margin : auto;
+	width : 300px;
+	line-height : 30px;
+	text-align : center;
+	vertical-align : middle;
+	background : url("Pictures/noir.jpg");
+	color : white;
+	text-decoration : none;
 }

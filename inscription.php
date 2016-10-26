@@ -24,28 +24,28 @@
 						<table>
 
 							<tr>
-								<td class="form"> Numéro carte d'adhérent : </td>
+
+								<td> Numéro carte d'adhérent : </td>
+
+								<td> <input type="number"/><br /></td>
 
 							</tr>
 
 							<tr>
-								<td> <input class="case" type="number"/><br /> </td>
-							</tr>
 
-								<td class="form"> Mot de passe : </td>
+								<td> Mot de passe : </td>
 
-							</tr>
-							<tr>	
-								<td> <input class="case" type="password"/><br /></td>
+								<td> <input type="password"/><br /></td>
+
 							</tr>
 
 						</table>
 
-						<input class="bouton" type="submit" value="Connexion"/><br />
+						<input type="submit" value="Connexion"/><br />
 
-					<br /><p> Vous êtes nouveau à la Ludothèque? </p>
+					<p> Vous êtes nouveau à la Ludothèque? </p>
 
-					<a href="inscription.php"> Inscription </a>
+					<a href="creer_compte.php"> Inscription </a>
 
 					</form>
 
