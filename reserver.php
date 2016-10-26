@@ -9,7 +9,7 @@
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-	  //page pour reserver
+	  <?php  include './function/new_withdraw.php';?>
 	</div>
 </div>
 		
