@@ -17,7 +17,7 @@
 
         while ($row = mysql_fetch_row($result)){
          	echo '<tr>
-		<form id='.$c_row.' action="reserver.php">
+		<form id='.$c_row.' action="../info.php">
 		<input type="hidden" name="jeux" value="'.$c_row.'"/>
 		</form>';
 		
