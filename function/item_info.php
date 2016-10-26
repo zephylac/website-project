@@ -10,6 +10,6 @@
 		<form id='item_res' method='post' action=''>
 		<input type='hidden' name='jeux_res' value=".$donnees[0].">
 		</form>
-		<a href='reserver.php' onclick='document.getElementById('item_res').submit()'>Reserver</a>";
+		<a href='../reserver.php' onclick='document.getElementById('item_res').submit()'>Reserver</a>";
           }
 ?>
