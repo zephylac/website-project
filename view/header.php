@@ -9,7 +9,7 @@
 					<a href="index.php">Accueil</a><br />
 					<a href="connexion.php">S'identifier</a><br />
 					<a href="#">Actualités</a><br />
-					<a href="#">Nos Jeux</a><br />
+					<a href="jeux.php">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
 				
 			</div>
