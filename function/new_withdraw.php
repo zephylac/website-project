@@ -1,9 +1,10 @@
 <?php
+    require('db_controller.php');
     if(!isset($_SESSION)){
             
             session_start(); // Ouverture la session si elle n'est pas ouverte
     }
-    require('db_controller.php');
+    
 
     //Var relative to the item withdraw
     $item_withdraw = $_POST['item'];
@@ -29,7 +30,7 @@
       }
       
       // Insertion d'un jeux dans le panier du client
-      $sql = "INSERT INTO Paniers (id, Nom, Creneau) VALUES ('$id', '$item_withdraw', '$date')";
+      $sql = "INSERT INTO Paniers (id, nom, creneau) VALUES ('$id', '$item_withdraw', '$date')";
       $result = db_request($sql);
       if($result){
         $sql = "UPDATE Jeux_Ludotheque SET NbJeuxDispos = NbJeuxDispos - 1 WHERE Nom='$item_withdraw'";
