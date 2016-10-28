@@ -2,7 +2,7 @@
 //@param
 //sql which is the request send to the database
 function db_request($sql){
-  //Connexion à la base de données
+  //Connexion Ã  la base de donnÃ©es
   //init var
   $db="nom-base";
   $server="nom-serveur";
@@ -15,13 +15,13 @@ function db_request($sql){
   
   //Display error message
   if(!$return){
-    echo "Connexion à la base impossible";
+    echo "Connexion Ã  la base impossible";
   }
   
   $response = mysql_query($sql);
   
   //Closing Mysql connection
-  mysqli_close($db);
+  mysql_close($db);
   
   return $response;
 }
