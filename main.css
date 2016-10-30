@@ -5,11 +5,7 @@ html body{
 }
 
 html{
-	background-color : #FFDAB9;
-}
-
-body{
-	background-color : white;
+	background-color : #1F94FA;
 }
 
 #header{
@@ -56,6 +52,8 @@ body{
 	font-family : Arial;
 	padding-left : 10px;
 	padding-right : 10px;
+	border : solid;
+	background-color : #68A8FB;
 }
 
 #salle{
