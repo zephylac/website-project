@@ -1,6 +1,6 @@
 //Display the info from the item selected in the game list
 <?php
-	require ('db_controller.php');
+	require ('../function/db_controller.php');
   if(isset($_POST["jeux"])){
 		$jeux = $_POST["jeux"];
     $result = db_request("SELECT * FROM `Jeux` NATURAL JOIN `JeuxLudotheque` WHERE `Nom`=".$jeux."");
