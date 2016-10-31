@@ -14,7 +14,7 @@ if(isset($_POST["connect"])){
 			setcookie('nom', $nom, time() + 7*24*3600, null, null, false, true);
 			setcookie('id', $id, time() + 7*24*3600, null, null, false, true);
 			//On redirige l'utilisateur vers son dashboard
-			header("location: dashboard.php");
+			header("location: ../view/dashboard.php");
 		}
 		else{
 			echo " Votre login ou votre mot de passe est faux";
