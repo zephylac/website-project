@@ -8,19 +8,17 @@
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-	<form id="formulaire" method="post" action="#">
-	  <select>
-  		<option value="TypeJeux">Type de jeux</option>
-  		<option value="Nom">Nom</option>
-  		<option value="Ages">Age</option>
-  		<option value="NbJeux">Jeux au total</option>
-		<option value="NbJeuxDispos">Jeux Disponibles</option>
-	  </select>
-	</form>
-	  <input type="submit" value="filter"/><br />
-    <table id="table-jeux">
-			<?php  include './function/get_item.php';?>
-		</table>
+		<form id="formulaire" method="post" action="#">
+			<select>
+				<option value="TypeJeux">Type de jeux</option>
+				<option value="Nom">Nom</option>
+				<option value="Ages">Age</option>
+				<option value="NbJeux">Jeux au total</option>
+				<option value="NbJeuxDispos">Jeux Disponibles</option>
+			</select>
+		</form>
+		<input type="submit" value="filter"/><br />
+		<?php  include './function/get_item.php';?>
 	</div>
 </div>
 		
