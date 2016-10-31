@@ -1,4 +1,4 @@
-<? php
+<?php
 //@param
 //sql which is the request send to the database
 function db_request($sql){
