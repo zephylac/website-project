@@ -1,16 +1,17 @@
 //This file will exit a table which contains all the item that the user has reserved
 // This file is only used with the dashboard
 <?php
-	require 'db_controller.php';
-	require 'connect.php'
+	require '../function/db_controller.php';
+	require '/function/connect.php'
     $valide = verif();
     if ($valide != 1){
-      //affichge de la page de connexion
+      //L'utilisateur n'est pas log, on affiche donc la page de connexion
+			include 'connexion.php';
     }
     else{
       $sql = 'SELECT * FROM Paniers ORDER BY Creneau';
       $result = db_request($sql);
-      echo '<div id=nav-mid><table id="table-jeux"><tr>';
+      echo '<div id="nav-mid"><table id="table-jeux"><tr>';
       while ($i < mysql_num_fields($result)){
                 $fieldName = mysql_field_name($result, $i);
                 //Here we can add filter if we don't want to show some column.
