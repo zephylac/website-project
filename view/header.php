@@ -1,5 +1,5 @@
 ﻿<div id="header">
-			<img id="image" src="Pictures/jeux.png"/>
+			<img id="image" src="../Pictures/jeux.png"/>
 			<img id="logo" src="Pictures/Logo.png"/>
 		</div>	
 
@@ -7,9 +7,9 @@
 			<div id="nav-left">
 				
 					<a href="index.php">Accueil</a><br />
-					<a href="connexion.php">S'identifier</a><br />
+					<a href="./view/connexion.php">S'identifier</a><br />
 					<a href="#">Actualités</a><br />
-					<a href="jeux.php">Nos Jeux</a><br />
+					<a href="liste-jeux.php">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
 				
 			</div>
