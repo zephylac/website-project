@@ -10,7 +10,7 @@
     else{
       $sql = 'SELECT * FROM Paniers ORDER BY Creneau';
       $result = db_request($sql);
-      echo '<table id="table-jeux"><tr>';
+      echo '<div id=nav-mid><table id="table-jeux"><tr>';
       while ($i < mysql_num_fields($result)){
                 $fieldName = mysql_field_name($result, $i);
                 //Here we can add filter if we don't want to show some column.
@@ -33,7 +33,7 @@
               echo '</tr>';
               $i = $i + 1;
           }
-          echo '</table>';
+          echo '</table></div>';
           mysql_free_result($result);
     } 
 ?>
