@@ -1,11 +1,24 @@
-require_once('db_controller.php');
 <?php
+require('db_controller.php');
+
 if(isset($_POST["connect"])){
 	if(!empty($_POST["nom"])&&!empty($_POST["id"])){
 		$nom = $_POST["nom"];
 		$id = $_POST["id"];
-    $sql = 'SELECT `Nom` FROM ... WHERE `nom`=$nom AND `id`=$id';
+    $sql = 'SELECT Nom FROM ... WHERE Nom='.$nom.' AND id='.$id'';
     $result = db_request($sql);
-    mysql_fetch_array($result);
+    while ($donnees = mysql_fetch_array($result) ){
+		if($donnees[0] != NULL){
+			//Traitement si la personne a réussi à se connecter
+			//On set des cookies d'une durée de 7 jours ainsi l'utilisateur n'a pas besoin de se connecter tous le temps
+			setcookie('nom', $nom, time() + 7*24*3600, null, null, false, true);
+			setcookie('id', $nom, time() + 7*24*3600, null, null, false, true);
+			//On redirige l'utilisateur vers son dashboard
+			header("location: dashboard.php");
+		}
+		else{
+			echo " Votre login ou votre mot de passe est faux";
+		}
+	}	
     
 ?>
