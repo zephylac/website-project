@@ -8,9 +8,9 @@
         </head>
         <body>
 	<?php  include './view/header.php';?>
-  
-			<?php  include './view/reservation.php';?>
-	</div>
+  	<?php  include './view/dashboard.php';?>
+	//le div suivant appartient au main-bloc contenu dans header.php
+	</div> 
 		
 		<div id="footer">
 			<p><center>Mentions légales|Charte de confidentialité|Plan du site</p>
