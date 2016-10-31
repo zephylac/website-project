@@ -1,5 +1,5 @@
 <div id="nav-mid-connexion">
-  <form id="formulaire" method="post" action="./function/login.php">
+  <form id="formulaire" method="post" action="../function/login.php">
 	  <h2 id="identification" >S'identifier</h2>
 		<table>
 			<tr>
