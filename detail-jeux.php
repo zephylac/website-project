@@ -10,7 +10,7 @@
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-	  <?php  include './function/item_info.php';?> 
+	  <?php  include './view/item-detail.php';?> 
 	</div>
 </div>
 		
