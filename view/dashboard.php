@@ -5,7 +5,7 @@
 	require 'connect.php'
     $valide = verif();
     if ($valide != 1){
-      echo 'Vous n'êtes pas connecté, bous ne pouvez pas accèder à ce contenu';
+      //affichge de la page de connexion
     }
     else{
       $sql = 'SELECT * FROM Paniers ORDER BY Creneau';
