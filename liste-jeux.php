@@ -18,7 +18,7 @@
 			</select>
 		</form>
 		<input type="submit" value="filter"/><br />
-		<?php  include './function/get_item.php';?>
+		<?php  include './function/item-list.php';?>
 	</div>
 </div>
 		
