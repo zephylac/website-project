@@ -26,7 +26,7 @@
         while ($y < $count){
         	$c_row = current($row);
           //Here we can add filter if we don't want to show some column
-					echo '<tr><form id='.$c_row.' action="../info.php"><input type="hidden" name="jeux" value="'.$c_row.'"/></form>';
+					echo '<tr><form id='.$c_row.' action="../detail-jeux.php"><input type="hidden" name="jeux" value="'.$c_row.'"/></form>';
 					echo '<td><a href="#" onclick="document.getElementById('.$c_row.').submit()">' . $c_row . '</a></td>';
           next($row);
           $y = $y + 1;
