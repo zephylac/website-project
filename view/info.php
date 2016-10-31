@@ -1,5 +1,5 @@
 //This file show the user all the game contained in the database
-<?php require('function/db_controller.php');?>
+<?php require('../function/db_controller.php');?>
 <!DOCTYPE hmtl>
 <html>
         <head>
@@ -8,9 +8,9 @@
 		<title> Ludothèque de SPI-ville </title>
         </head>
         <body>
-	<?php  include './view/header.php';?>
+	<?php  include 'header.php';?>
   <div id="nav-mid">
-	  <?php  include './function/item_info.php';?> 
+	  <?php  include '../function/item_info.php';?> 
 	</div>
 </div>
 		
