@@ -9,7 +9,7 @@
   <body>
     <?php  include './view/header.php';?>
     <div id="nav-mid">
-        <?php  include './function/new_withdraw.php';?>
+        <?php  include './view/item-reservation.php';?>
       </div>
     </div>		
     <div id="footer">
