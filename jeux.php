@@ -1,4 +1,3 @@
-<?php require('function/db_controller.php');?>
 <!DOCTYPE hmtl>
 <html>
         <head>
