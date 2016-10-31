@@ -8,7 +8,7 @@
 		<title> Ludothèque de SPI-ville </title>
         </head>
         <body>
-	<?php  include 'header.php';?>
+	<?php  include './view/header.php';?>
   <div id="nav-mid">
 	  <?php  include './function/item_info.php';?> 
 	</div>
