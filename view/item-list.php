@@ -1,5 +1,5 @@
 <?php
-	require 'db_controller.php';
+	require '../function/db_controller.php';
 
 	if(!isset($_POST["filter"])){
 		//If there is no filter given, it will be sorted by DEFAULT whith the following value
