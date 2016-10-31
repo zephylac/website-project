@@ -11,7 +11,7 @@
 		$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludotheque ORDER BY '.$order.'';
 		$result = db_request($sql);
 		//$result = db_request("SELECT * FROM `jeux` NATURAL JOIN `jeuxludotheque` ORDER BY ".$order."");
-	 	echo'<table id="table-jeux"><tr>';
+	 	echo'<div id="nav-mid"><table id="table-jeux"><tr>';
 		while ($i < mysql_num_fields($result)){
     	$fieldName = mysql_field_name($result, $i);
       //Here we can add filter if we don't want to show some column.
@@ -35,5 +35,5 @@
         $i = $i + 1;
       }
       mysql_free_result($result);
-			echo '</table>';
+			echo '</table></div>';
 ?>
