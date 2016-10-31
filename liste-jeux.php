@@ -9,7 +9,7 @@
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
 		<form id="formulaire" method="post" action="#">
-			<select name=filter>
+			<select name=order>
 				<option value="TypeJeux">Type de jeux</option>
 				<option value="Nom">Nom</option>
 				<option value="Ages">Age</option>
@@ -17,7 +17,7 @@
 				<option value="NbJeuxDispos">Jeux Disponibles</option>
 			</select>
 		</form>
-		<input type="submit" value="filtred"/><br />
+		<input type="submit" value="filter"/><br />
 		<?php  include './function/get_item.php';?>
 	</div>
 </div>
