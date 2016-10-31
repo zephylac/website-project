@@ -12,7 +12,7 @@ if(isset($_POST["connect"])){
 			//Traitement si la personne a réussi à se connecter
 			//On set des cookies d'une durée de 7 jours ainsi l'utilisateur n'a pas besoin de se connecter tous le temps
 			setcookie('nom', $nom, time() + 7*24*3600, null, null, false, true);
-			setcookie('id', $nom, time() + 7*24*3600, null, null, false, true);
+			setcookie('id', $id, time() + 7*24*3600, null, null, false, true);
 			//On redirige l'utilisateur vers son dashboard
 			header("location: dashboard.php");
 		}
