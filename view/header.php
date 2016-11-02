@@ -18,8 +18,6 @@
 
 				<div id="horloge">
 					<br />
-					//<script type="text/javascript" src="http://www.service-gratuit-fr.com/horloges.php?id=301829&w=150&h=150">
-					//</script>
 					<?php  
 						$date = date("d/m/Y");
 						$jour = date("l");
