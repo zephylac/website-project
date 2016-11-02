@@ -8,7 +8,7 @@
         <body>
 	<?php  include './view/header.php';?>
   	<?php  include './view/dashboard.php';?>
-	//le div suivant appartient au main-bloc contenu dans header.php
+	<!--le div suivant appartient au main-bloc contenu dans header.php-->
 	</div> 
 		
 	<div id="footer">
