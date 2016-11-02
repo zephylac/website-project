@@ -1,5 +1,5 @@
 <div id="header">
-			<img id="image" src="../Pictures/jeux.png"/>
+			<img id="image" src="Pictures/jeux.png"/>
 			<img id="logo" src="Pictures/Logo.png"/>
 		</div>	
 

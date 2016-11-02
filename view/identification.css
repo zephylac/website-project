@@ -1,0 +1,31 @@
+#blok-connexion{
+	text-align : center;
+}
+
+#formulaire{
+	size: 22px;
+	display : block;
+	margin : auto;
+	border : solid;
+	height : 320px;
+	width : 400px;
+	background-color : white;
+}
+
+#tableau{
+	position : relative;
+	padding-left : 40px;
+}
+
+.case{
+	width : 300px;
+}
+
+.form{
+	font-size : 16px;
+	font-weight : bold;
+}
+
+h1{
+	text-align : center;
+}
