@@ -56,10 +56,10 @@ html{
 	background-color : #68A8FB;
 }
 
-#salle{
+.salle{
 	height : 350px;
 	width : 550px;
-	display : block;
+	display : none;
 	margin : auto;
 }
 
