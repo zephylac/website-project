@@ -8,7 +8,7 @@
 				
 					<a href="index.php">Accueil</a><br />
 					<a href="./view/connexion.php">S'identifier</a><br />
-					<a href="#">Actualités</a><br />
+					<a href="actualites.php">Actualités</a><br />
 					<a href="liste-jeux.php">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
 				
@@ -18,6 +18,17 @@
 
 				<div id="horloge">
 					<br />
+						<article class="clock">
+						  <div class="hours-container">
+						    <div class="hours"></div>
+						  </div>
+						  <div class="minutes-container">
+						    <div class="minutes"></div>
+						  </div>
+						  <div class="seconds-container">
+						    <div class="seconds"></div>
+						  </div>
+						</article>
 					<?php  
 						$date = date("d/m/Y");
 						$jour = date("l");

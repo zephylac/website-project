@@ -12,28 +12,29 @@
 			  	<h2 id="identification" >Inscription</h2>
 					<table id="tableau">
 						<tr>
-							<td class="form"> Nom </td>
+							<td class="form"> Prénom </td>
 						</tr>
 						<tr>
 							<td> <input class="case" type="text"/><br /> </td>
+						</tr>
+						</tr>
+							<td class="form"> Nom </td>
+						</tr>
+						<tr>	
+							<td> <input class="case" type="text"/><br /></td>
+						</tr>
+						<tr>
+							<td class="form"> Date de naissance </td>
+						</tr>
+						<tr>	
+							<td> <input class="case" type="date"/><br /></td>
+						</tr>
 						</tr>
 						</tr>
 							<td class="form"> E-mail </td>
 						</tr>
 						<tr>	
 							<td> <input class="case" type="email"/><br /></td>
-						</tr>
-						<tr>
-							<td class="form"> Mot de passe </td>
-						</tr>
-						<tr>	
-							<td> <input class="case" type="password"/><br /></td>
-						</tr>
-						</tr>
-							<td class="form"> Confirmer le mot de passe </td>
-						</tr>
-						<tr>	
-							<td> <input class="case" type="password"/><br /></td>
 						</tr>
 					</table>
 					<input class="bouton" type="submit" value="Créer votre compte"/><br />
