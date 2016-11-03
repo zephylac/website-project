@@ -63,6 +63,32 @@ html{
 	margin : auto;
 }
 
+.actu{
+	overflow: hidden;
+	text-align : justify;
+	height : 225px;
+	width : 450px;
+	border : dotted;
+	margin : auto;
+	margin-top : 5px;
+	margin-bottom : 5px;
+}
+
+.actu h2{
+	text-align : center;
+}
+
+.actu mark{
+	font-weight : bold;
+	background-color : red;
+}
+
+.image_actu{
+	width : 250px;
+	float : right;
+	margin-left : 5px;
+}
+
 #labo{
 	height : 250px;
 	width : 450px;
