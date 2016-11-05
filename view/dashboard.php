@@ -2,31 +2,6 @@
 //This file will exit a table which contains all the item that the user has reserved
 // This file is only used with the dashboard
     require './function/db_controller.php';
-/*    echo $_COOKIE["nom"]. ' ' . $_COOKIE["id"];
-    
-
-    if(isset($_COOKIE['nom'])&&isset($_COOKIE['id'])){
-	  if(!empty($_COOKIE['nom'])&&!empty($_COOKIE['nom'])){
-		  $nom = $_COOKIE["nom"];
-      $id = $_COOKIE["id"];
-      $sql = "SELECT Client FROM FC_grp1_Membres WHERE Client='".$nom."' AND Id='".$id."'";
-      $result = db_request($sql);
-      echo $result;
-      while ($donnees = mysql_fetch_array($result) ){
-	  echo $donnees[0];    
-	  if($donnees[0] != NULL){
-          $test = 1;
-        }          
-      }
-	  }
-	  echo '1';
-	  echo $test;
-  }
-    	    $test = 0;
-
- */
-
-
     $test = verif();
     if ($test != 1){
       //L'utilisateur n'est pas log, on affiche donc la page de connexion
