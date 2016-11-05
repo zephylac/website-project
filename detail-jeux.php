@@ -6,9 +6,10 @@
 		<title> Ludothèque de SPI-ville </title>
         </head>
         <body>
-	<?php  include './view/header.php';?>
-	  <?php  include './view/item-detail.php';?> 
-</div>
+		<?php  include './view/header.php';?>
+		<?php  include './view/item-detail.php';?>
+		<!--le div suivant appartient au main-bloc contenu dans header.php-->
+		</div>
 		
 		<div id="footer">
 			<p><center>Mentions légales|Charte de confidentialité|Plan du site</p>
