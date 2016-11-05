@@ -7,6 +7,7 @@
 	else{
 		$order = $_POST["order"];
 	}
+	//$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludothèque ORDER BY '.$order.'';
 	$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
 	$result = db_request($sql);
 	
