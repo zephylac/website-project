@@ -8,7 +8,7 @@
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-		<form id="formulaire" method="post" action="#">
+		<form id="formulaire" method="post" action="./view/item-list.php">
 			<select name=order>
 				<option value="TypeJeux">Type de jeux</option>
 				<option value="Nom">Nom</option>
