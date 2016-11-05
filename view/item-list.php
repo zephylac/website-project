@@ -7,12 +7,11 @@
 	else{
 		$order = $_POST["order"];
 	}
-	$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludotheque ORDER BY '.$order.'';
-	//$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
+	$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
 	$result = db_request($sql);
 	
-	//echo '<table id="table-jeux"><tr>';
-	echo '<tr>';
+	echo '<table id="table-jeux"><tr>';
+	//echo '<tr>';
 	$i = 0;
 	while ($i < mysql_num_fields($result)){
     		$fieldName = mysql_field_name($result, $i);
@@ -29,14 +28,18 @@
 	        while ($y < $count){
         		$c_row = current($row);
         	 	//Here we can add filter if we don't want to show some column
-			echo '<form id='.$c_row.' action="./detail-jeux.php"><input type="hidden" name="jeux" value="'.$c_row.'"/></form>';
-			echo '<td><a href="./detail-jeux.php" onclick="document.getElementById('.$c_row.').submit()">' . $c_row . '</a></td>';
-          		next($row);
+			if($y == 0){
+				echo '<td><a href="./detail-jeux.php?jeux='.$c_row.'">'.$c_row.'</a></td>';
+			}
+			else{
+				echo '<td>'. $c_row .'</td>';	
+			}	
+				next($row);
          		$y = $y + 1;
         	}
         	echo '</tr>';
         	$i = $i + 1;
       	}
      	mysql_free_result($result);
-	//echo '</table>';
+	echo '</table>';
 ?>
