@@ -8,22 +8,22 @@
         <body>
 		<h1> SPI-VILLE </h1>
 		<div id="blok-connexion">
-			<form id="formulaire" method="post" action="function/login.php">
+			<form id="formulaire" method="post" action="../function/login.php">
 			  	<h2 id="identification" >Connexion</h2>
 					<table id="tableau">
 						<tr>
 							<td class="form"> Numéro carte d'adhérent </td>
 						</tr>
 						<tr>
-							<td> <input class="case" type="text"/><br /> </td>
+							<td> <input class="case" name="id" type="text"/><br /> </td>
 						</tr>
-							<td class="form"> Mot de passe </td>
+							<td class="form"> Nom </td>
 						</tr>
 						<tr>	
-							<td> <input class="case" type="password"/><br /></td>
+							<td> <input class="case" name="nom" type="text"/><br /></td>
 						</tr>
 					</table>
-					<input class="bouton" type="submit" value="Connexion"/><br />
+					<input class="bouton" type="submit" name="connect" value="connect"/><br />
 				<br /><p> Vous êtes nouveau à la Ludothèque? </p>
 				<a href="inscription.php"> Inscription </a>
 			</form>
