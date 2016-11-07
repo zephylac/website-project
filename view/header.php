@@ -35,12 +35,7 @@
 						$heure = date("H:i");
 						$h = date("H");
 						$min = date("i");
-						echo'<p>'.$heure.'</p>';
-						echo'<p>'.$date.'</p><br />';
-						echo'<p>';
-						
 							
-					
 							//Test si la ludothèque est en ce moment ouverte ou fermé
 							if(strcmp($jour,'Monday') == 0 && ($h >= 9 && $h < 17))
 								echo '<p class="ouvert">Ouvert<br /></p>';
@@ -53,12 +48,18 @@
 							else if(strcmp($jour,'Friday') == 0 && ($h >= 9 && $h < 17))
 								echo '<p class="ouvert">Ouvert<br /></p>';
 							else echo '<p class="ferme">Fermé<br /></p>';
-						?>
+							
+						echo'<p>'.$heure.'</p>';
+						echo'<p>'.$date.'</p><br />';
+						echo'<p>';
+					?>
 					</p>
 				</div>
 
+				<hr></hr>
 				<br />
-
+				
+				<h3> Horaires </h3>
 				<ul id="planning">
 					<li><span>Lundi</span>: 9h à 17h</li>
 					<li><span>Mardi</span>: 9h à 17h</li>
