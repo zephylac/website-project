@@ -25,7 +25,7 @@
 					</table>
 					<input class="bouton" type="submit" name="connect" value="connect"/><br />
 				<br /><p> Vous êtes nouveau à la Ludothèque? </p>
-				<a href="inscription.php"> Inscription </a>
+				<p> Rendez-vous à notre Ludothèque afin de valider votre inscription </p>
 			</form>
 		</div>
 	</body>
