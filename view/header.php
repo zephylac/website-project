@@ -1,3 +1,15 @@
+<?php
+	require('./function/db_controller.php');
+	$test = verif();
+	if($test == 1){
+		$texte = 'Panneau utilisateur';
+		$url = './userpanel.php;
+	}
+	else{
+		$texte = 'S\'identifier';
+		$url = './view/connexion.php;
+	}
+?>
 <div id="header">
 			<img id="image" src="Pictures/jeux.png"/>
 			<img id="logo" src="Pictures/Logo.png"/>
@@ -7,7 +19,7 @@
 			<div id="nav-left">
 				
 					<a href="index.php">Accueil</a><br />
-					<a href="./view/connexion.php">S'identifier</a><br />
+				<?php echo'<a href="'.$url.'">'.$texte.'<a><br />';?>
 					<a href="actualites.php">Actualités</a><br />
 					<a href="liste-jeux.php">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
