@@ -1,5 +1,4 @@
 <?php
-	require ('./function/db_controller.php');
 	if(!isset($_GET["order"])){
 		//If there is no filter given, it will be sorted by DEFAULT whith the following value
 		$order = 'Nom';	
