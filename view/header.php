@@ -3,11 +3,11 @@
 	$test = verif();
 	if($test == 1){
 		$texte = 'Panneau utilisateur';
-		$url = './userpanel.php;
+		$url = './userpanel.php';
 	}
 	else{
-		$texte = 'S\'identifier';
-		$url = './view/connexion.php;
+		$texte = "S'identifier";
+		$url = './view/connexion.php';
 	}
 ?>
 <div id="header">
