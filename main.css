@@ -22,7 +22,7 @@ html{
 	text-align : center;
 	width: 150px;
 	height : 100%;
-	margin-right : 30px;
+	margin-right : 2%;
 }
 
 #nav-left a{
@@ -44,6 +44,7 @@ html{
 	float : right;
 	width: 220px;
 	text-align : center;
+	margin-left : 2%;
 }
 
 #planning{
