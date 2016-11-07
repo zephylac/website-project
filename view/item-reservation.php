@@ -1,5 +1,4 @@
 <?php
-require('./function/db_controller.php');
 $verif = verif();
 if($verif != 1){
 	//On renvoie l'utilisateur à la page de connexion
