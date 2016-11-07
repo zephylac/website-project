@@ -17,9 +17,11 @@
 	while ($i < mysql_num_fields($result)){
     		$fieldName = mysql_field_name($result, $i);
    		//Here we can add filter if we don't want to show some column.
-		echo '<th>' . $fieldName . '</th>';
-      		$i = $i + 1;
-    	}		
+		if($i = 0 || $i ==1 || $i == 3){
+			echo '<th>' . $fieldName . '</th>';
+		}
+		$i = $i + 1;
+	}		
     	echo '</tr>';
    	$i = 0;
 	while ($row = mysql_fetch_row($result)){		
@@ -32,7 +34,7 @@
 			if($y == 0){
 				echo '<td><a href="./detail-jeux.php?jeux='.$c_row.'">'.$c_row.'</a></td>';
 			}
-			else{
+			if($y == 1 || $y == 3){
 				echo '<td>'. $c_row .'</td>';	
 			}	
 				next($row);
