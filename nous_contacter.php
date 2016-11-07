@@ -10,7 +10,7 @@
 		
 			<div id="nav-mid">
 				<img id="labo" src="Pictures/labo.jpg"/>
-				<ul>
+				<ul id="infos">
 					<li>33 rue jesaispas Le Mans (Arrêt tram Campus Ribay)</li><br />
 					<li>E-mail: ludotheque.spi-ville@univ-lemans.fr</li><br />
 					<li>Numero de telephone: 04 52 48 78 35</lip><br />
