@@ -1,5 +1,4 @@
 <?php  
-require ('./function/db_controller.php');
 if(isset($_GET["jeux"])){
 	$jeux = $_GET["jeux"];
 	$result = db_request("SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque WHERE Nom='".$jeux."'");	
