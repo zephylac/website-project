@@ -11,9 +11,9 @@
 			<div id="nav-mid">
 				<img id="labo" src="Pictures/labo.jpg"/>
 				<ul id="infos">
-					<li>33 rue jesaispas Le Mans (Arrêt tram Campus Ribay)</li><br />
+					<li>Ludothque - IC2, 72085 Le Mans (Arrêt tram Campus Ribay)</li><br />
 					<li>E-mail: ludotheque.spi-ville@univ-lemans.fr</li><br />
-					<li>Numero de telephone: 04 52 48 78 35</lip><br />
+					<li>Numero de telephone: 02 43 83 38 38</lip><br />
 				</ul>
 			</div>
 		</div>
