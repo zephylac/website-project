@@ -13,11 +13,9 @@
 				<option value="TypeJeux">Type de jeux</option>
 				<option value="Nom">Nom</option>
 				<option value="Ages">Age</option>
-				<option value="NbJeux">Jeux au total</option>
-				<option value="NbJeuxDispos">Jeux Disponibles</option>
 			</select>
+			<input type="submit" value="filter"/><br />
 		</form>
-		<input type="submit" value="filter"/><br />
 		<?php  include './view/item-list.php';?>
 	</div>
 </div>
