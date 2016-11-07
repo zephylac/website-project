@@ -1,7 +1,6 @@
 <?php
 //This file will exit a table which contains all the item that the user has reserved
 // This file is only used with the dashboard
-    require './function/db_controller.php';
     $test = verif();
     if ($test != 1){
       //L'utilisateur n'est pas log, on affiche donc la page de connexion
