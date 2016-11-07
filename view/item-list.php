@@ -17,8 +17,9 @@
 	while ($i < mysql_num_fields($result)){
     		$fieldName = mysql_field_name($result, $i);
    		//Here we can add filter if we don't want to show some column.
-		if($i == 0 || $i == 1 || $i == 3)
+		if($i == 0 || $i == 1 || $i == 3){
 			echo '<th>' . $fieldName . '</th>';
+		}
       		$i = $i + 1;
     	}		
     	echo '</tr>';
