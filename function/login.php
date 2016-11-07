@@ -5,7 +5,7 @@ if(isset($_POST["connect"])){
 	if(!empty($_POST["nom"])&&!empty($_POST["id"])){
 		$nom = $_POST["nom"];
 		$id = $_POST["id"];
-    $sql = 'SELECT Client FROM FC_grp1_Paniers WHERE Client="'.$nom.'" AND Id="'.$id'"';
+    $sql = 'SELECT Client FROM FC_grp1_Paniers WHERE Client="'.$nom.'" AND Id="'.$id.'"';
     $result = db_request($sql);
     while ($donnees = mysql_fetch_array($result) ){
 		if($donnees[0] != NULL){
