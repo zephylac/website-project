@@ -59,34 +59,14 @@
 
 				<br />
 
-				<table border="0">
-					<tr>
-						<td class="jours">Lundi</td>
-						<td>: 9h à 17h</td>
-					</tr>
-						<td class="jours">Mardi</td>
-						<td>: 9h à 17h</td>
-					</tr>
-					</tr>
-						<td class="jours">Mercredi</td>
-						<td>: 9h à 12h - 14h à 17h</td>
-					</tr>
-					<tr>
-						<td class="jours">Jeudi</td>
-						<td>: 9h à 17h</td>
-					</tr>
-					<tr>
-						<td class="jours">Vendredi</td>
-						<td>: 9h à 17h</td>
-					</tr>
-					<tr>
-						<td class="jours">Samedi</td>
-						<td>: Fermé</td>
-					</tr>
-					<tr>
-						<td class="jours">Dimanche</td>
-						<td>: Fermé</td>
-					</tr>
-				</table>
+				<ul id="planning">
+					<li><span>Lundi</span>: 9h à 17h</li>
+					<li><span>Mardi</span>: 9h à 17h</li>
+					<li><span>Mercredi</span>: 9h à 12h - 14h à 17h</li>
+					<li><span>Jeudi</span>: 9h à 17h</li>
+					<li><span>Vendredi</span>: 9h à 17h</li>
+					<li><span>Samedi</span>: Fermé</li>
+					<li><span>Dimanche</span>: Fermé</li>
+				</ul>
 	
 			</div>
