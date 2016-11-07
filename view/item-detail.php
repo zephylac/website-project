@@ -8,7 +8,7 @@ require ('./function/db_controller.php');
     		//Display the result
 	    	echo '<p> '.$donnees[0].$donnees[1].$donnees[2].$donnees[3].$donnees[4].'</p>';
 	}
-	echo '<a href="./reserver-jeux.php?jeux='.$donnees[0].'">Reserver</a>';
+	echo '<a href="./reserver-jeux.php?jeux='.$jeux.'">Reserver</a>';
 	echo '</div>';
   }
   else{
