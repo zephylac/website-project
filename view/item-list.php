@@ -1,18 +1,16 @@
 <?php
 	require ('./function/db_controller.php');
-	if(!isset($_POST["filter"])){
+	if(!isset($_GET["filter"])){
 		//If there is no filter given, it will be sorted by DEFAULT whith the following value
 		$order = 'Nom';	
 	}
 	else{
-		$order = $_POST["order"];
+		$order = $_GET["order"];
 	}
-	//$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludothèque ORDER BY '.$order.'';
 	$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
 	$result = db_request($sql);
 	
 	echo '<table id="table-jeux"><tr>';
-	//echo '<tr>';
 	$i = 0;
 	while ($i < mysql_num_fields($result)){
     		$fieldName = mysql_field_name($result, $i);
@@ -21,7 +19,8 @@
 			echo '<th>' . $fieldName . '</th>';
 		}
 		$i = $i + 1;
-	}		
+	}
+
     	echo '</tr>';
    	$i = 0;
 	while ($row = mysql_fetch_row($result)){		
