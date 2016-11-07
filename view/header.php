@@ -22,7 +22,7 @@
 					<a href="actualites.php">Actualités</a><br />
 					<a href="liste-jeux.php">Nos Jeux</a><br />
 					<a href="nous_contacter.php">Nous contacter</a><br />
-				
+				<?php if($test == 1){echo'<a href="./function/logout.php">Se déconnecter</a><br />';}?>
 			</div>
 		
 			<div id="nav-right">
