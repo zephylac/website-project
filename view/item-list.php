@@ -7,20 +7,20 @@
 	else{
 		$order = $_GET["order"];
 	}
+	//$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludothèque ORDER BY '.$order.'';
 	$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
 	$result = db_request($sql);
 	
-	echo '<table id="table-jeux"><tr>';
+	echo '<div id="table-jeux"><table ><tr>';
+	//echo '<tr>';
 	$i = 0;
 	while ($i < mysql_num_fields($result)){
     		$fieldName = mysql_field_name($result, $i);
    		//Here we can add filter if we don't want to show some column.
-		if($i = 0 || $i ==1 || $i == 3){
+		if($i == 0 || $i == 1 || $i == 3)
 			echo '<th>' . $fieldName . '</th>';
-		}
-		$i = $i + 1;
-	}
-
+      		$i = $i + 1;
+    	}		
     	echo '</tr>';
    	$i = 0;
 	while ($row = mysql_fetch_row($result)){		
@@ -43,5 +43,5 @@
         	$i = $i + 1;
       	}
      	mysql_free_result($result);
-	echo '</table>';
+	echo '</table></div>';
 ?>
