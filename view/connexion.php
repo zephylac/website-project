@@ -23,7 +23,7 @@
 							<td> <input class="case" name="nom" type="text"/><br /></td>
 						</tr>
 					</table>
-					<input class="bouton" type="submit" name="connect" value="connect"/><br />
+					<input class="bouton" type="submit" name="connect" value="Connection"/><br />
 				<br /><p> Vous êtes nouveau à la Ludothèque? </p>
 				<p id="new"> Rendez-vous à notre Ludothèque <a href="../nous_contacter.php"> ici</a> afin de valider votre inscription </p>
 
