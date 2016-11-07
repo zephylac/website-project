@@ -124,10 +124,12 @@ html{
 
 .ferme{
 	color : red;
+	font-size : 20px;
 }
 
 .ouvert{
-	color : green;
+	color : #66FF33;
+	font-size : 20px;
 }
 
 #table-jeux table, td, th{
