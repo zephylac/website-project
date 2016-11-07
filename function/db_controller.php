@@ -25,4 +25,21 @@ function db_request($sql){
   
   return $response;
 }
+//function which verify if the cookies are right
+function verif(){
+  if(isset($_COOKIE['nom'])&&isset($_COOKIE['id'])){
+	  if(!empty($_COOKIE['nom'])&&!empty($_COOKIE['nom'])){
+		  $nom = $_COOKIE["nom"];
+      $id = $_COOKIE["id"];
+      $sql = "SELECT Client FROM FC_grp1_Membres WHERE Client='".$nom."' AND Id='".$id."'";
+      $result = db_request($sql);
+      while ($donnees = mysql_fetch_array($result) ){
+	  if($donnees[0] != NULL){
+          return 1;
+        }          
+      }
+    }	
+  }
+  return 0;
+} 
 ?>
