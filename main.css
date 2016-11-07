@@ -106,6 +106,10 @@ html{
 	float : left;
 }
 
+#infos{
+	margin-left : 39%;
+}
+
 #image{
 	float : right;
 	height : 150px;
