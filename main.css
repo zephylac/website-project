@@ -84,7 +84,7 @@ html{
 	overflow: hidden;
 	text-align : justify;
 	height : 225px;
-	width : 450px;
+	width : 500px;
 	border : dotted;
 	margin : auto;
 	margin-top : 5px;
@@ -127,23 +127,25 @@ html{
 .ferme{
 	color : red;
 	font-size : 20px;
+	text-align : center;
 }
 
 .ouvert{
 	color : #66FF33;
 	font-size : 20px;
+	text-align : center;
 }
 
 #table-jeux table, td, th{
 	border-collapse: collapse;
-    	border: 2px solid;
+    border: 2px solid;
 }
 
 #table-jeux table{
 	width: 80%;
 	margin : auto;
 	margin-bottom : 5px;
-    	border-radius: 5px;
+    border-radius: 5px;
 	margin-top : 50px;
 }
 
@@ -156,6 +158,11 @@ html{
 #formulaire{
 	float : left;
 	margin-left : 10%;
+}
+
+#reserv{
+	margin-top : 10px;
+	margin-left : 40%;
 }
 
 #table-jeux a:link, a:visited {
@@ -174,4 +181,13 @@ html{
 
 .detail h2{
 	text-align : center;
+}
+
+.description{
+	margin-left : 8%;
+	margin-right : 8%;
+	border : 1px solid;
+	border-radius : 5px;
+	padding-left : 3px;
+	padding-right : 3px;
 }
