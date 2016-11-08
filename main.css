@@ -167,11 +167,11 @@ html{
 
 #table-jeux a:link, a:visited {
 	background-color : #68A8FB;
-    color : black;
-    padding : 14px 25px;
-    text-align : center;
-    text-decoration : none;
-    display : inline-block;
+ 	color : brown;
+   	padding : 14px 25px;
+   	text-align : center;
+   	text-decoration : none;
+    	display : inline-block;
 }
 
 #table-jeux a:hover, a:active {
