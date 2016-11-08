@@ -6,8 +6,24 @@
 	else{
 		$order = $_GET["order"];
 	}
+
+	if(!isset($_GET["att"])){
+		//If there is no filter given, it will be sorted by DEFAULT whith the following value
+		$att = '1';	
+	}
+	else{
+		$att = $_GET["att"];
+	}
+
+	if(!isset($_GET["value"])){
+		//If there is no filter given, it will be sorted by DEFAULT whith the following value
+		$value = '1';	
+	}
+	else{
+		$value = $_GET["value"];
+	}
 	//$sql = 'SELECT * FROM jeux NATURAL JOIN jeuxludothèque ORDER BY '.$order.'';
-	$sql = 'SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque ORDER BY '.$order.'';
+	$sql = "SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque WHERE ".$att."='".$value."' ORDER BY ".$order."";
 	$result = db_request($sql);
 	
 	echo '<div id="table-jeux"><table ><tr>';
