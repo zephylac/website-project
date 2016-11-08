@@ -22,7 +22,7 @@ if(isset($_GET["jeux"])){
 	}
 	while ($donnees = mysql_fetch_array($result) ){
 		//Display the result
-		echo '<p> '.$donnees[0].$donnees[1].$donnees[2].$donnees[3].$donnees[4].'</p>';	
+		echo '<br /><br /><ul> <li>Jeux: '.$donnees[0].'</li><li>Tranche d\'âge recommandé: '.$donnees[1].' ans</li><li>Description: '.$donnees[2].'</li><li>Type de jeu: '.$donnees[3].'</li><li>Nombre de jeux disponibles: '.$donnees[5].'</li></ul>';	
 	}
 	echo '</div>';
 }
