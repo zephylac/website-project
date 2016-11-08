@@ -8,7 +8,7 @@ if ($test != 1){
 }
 else{
 	$client = $_COOKIE["nom"];
-	$sql = "SELECT * FROM FC_grp1_Paniers ORDER BY Creneau WHERE Client='".$client."'";
+	$sql = "SELECT * FROM FC_grp1_Paniers WHERE Client='".$client."' ORDER BY Creneau ";
 	$result = db_request($sql);
 	echo '<div id="nav-mid"><br /><p>L\'état de vos reservation</p><hr />';
 	if(mysql_num_rows($result) == 0){
@@ -43,7 +43,7 @@ else{
         	              	next($row);
                 	     	$y = $y + 1;
 			}
-			echo '<td><a href=./function/cancel.php?jeux='.$jeux.'>X</a></td>';
+			echo '<td><a href="./function/cancel.php?jeux='.$jeux.'&date='.$time.'">X</a></td>';
 			echo '</tr>';
              		$i = $i + 1;
 		}
