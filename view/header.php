@@ -2,7 +2,7 @@
 	require('./function/db_controller.php');
 	$test = verif();
 	if($test == 1){
-		$texte = 'Panneau utilisateur';
+		$texte = 'Panier';
 		$url = 'userpanel.php';
 	}
 	else{
