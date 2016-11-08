@@ -4,7 +4,7 @@
 $test = verif();
 if ($test != 1){
 	//L'utilisateur n'est pas log, on affiche donc la page de connexion
-	include './view/connexion.php';
+	header("location: redirect.php");
 }
 else{
 	$client = $_COOKIE["nom"];
