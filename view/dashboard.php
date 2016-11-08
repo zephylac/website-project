@@ -7,7 +7,8 @@ if ($test != 1){
 	include './view/connexion.php';
 }
 else{
-	$sql = 'SELECT * FROM FC_grp1_Paniers ORDER BY Creneau';
+	$client = $_COOKIE["nom"];
+	$sql = "SELECT * FROM FC_grp1_Paniers ORDER BY Creneau WHERE Client='".$client."'";
 	$result = db_request($sql);
 	echo '<div id="nav-mid"><br /><p>L\'état de vos reservation</p><hr />';
 	if(mysql_num_rows($result) == 0){
@@ -21,9 +22,10 @@ else{
 			//Here we can add filter if we don't want to show some column.
 			echo '<th>' . $fieldName . '</th>';
 			$i = $i + 1;
-	      	}	
+		}
+		echo '<th> Annuler </th>';	
 	        echo '</tr>';
-       		$i = 0;
+		$i = 0;
 	        while ($row = mysql_fetch_row($result)){
         		$count = count($row);
               		$y = 0;
@@ -31,11 +33,18 @@ else{
         	      	while ($y < $count){
                 		$c_row = current($row);
                       		//Here we can add filter if we don't want to show some column
-	                      	echo '<td>' . $c_row . '</td>';
+				if($y == 0){
+					$jeux = $c_row;
+				}
+				if($y == 2){
+					$time = $c_row;
+				}
+				echo '<td>' . $c_row . '</td>';
         	              	next($row);
                 	     	$y = $y + 1;
-	              	}
-        	   	echo '</tr>';
+			}
+			echo '<td><a href=./function/cancel.php?jeux='.$jeux.'>X</a></td>';
+			echo '</tr>';
              		$i = $i + 1;
 		}
 	        echo '</table>';
