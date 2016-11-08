@@ -9,9 +9,9 @@
         <body>
 	<?php  include './view/header.php';?>		
 			<div id="nav-mid">
-				<img class="salle" src="Pictures/salle.jpg"/>
-     				<img class="salle" src="Pictures/salle2.jpg"/>
-     				<img class="salle" src="Pictures/salle3.jpg"/>
+				<img class="salle" src="Pictures/salle.jpg" alt="photo table de jeux"/>
+     				<img class="salle" src="Pictures/salle2.jpg" alt="photo des jeux"/>
+     				<img class="salle" src="Pictures/salle3.jpg" alt="photo salle 2"/>
 
 				
 				<script>
