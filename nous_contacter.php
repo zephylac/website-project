@@ -9,7 +9,7 @@
 	<?php  include './view/header.php';?>
 		
 			<div id="nav-mid">
-				<img id="labo" src="Pictures/labo.jpg"/>
+				<img id="labo" src="Pictures/labo.jpg" alt="photo de la Ludothèque"/>
 				<ul id="infos">
 					<li>Ludothèque - IC2, 72085 Le Mans (Arrêt tram Campus Ribay)</li><br />
 					<li>E-mail: ludotheque.spi-ville@univ-lemans.fr</li><br />
