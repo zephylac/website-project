@@ -20,7 +20,7 @@
 				<div class="actu">
 					<h2> Lecture pour vos enfants </h2>
 
-					<img class="image_actu" src="./Pictures/lecture.jpg" alt="Inauguration !!"/>
+					<img class="image_actu" src="./Pictures/lecture.jpg" alt="Enfants qui lisent"/>
 					<p> <mark> Samedi 18 Novembre </mark> <br/> A 15h une lecture de 1h30 pour vos enfants sera organisé par notre animateur, suivi d'un goûter. </p>
 
 				</div>
@@ -28,7 +28,7 @@
 				<div class="actu">
 					<h2> Concours de belote </h2>
 
-					<img class="image_actu" src="./Pictures/belote.jpg" alt="Inauguration !!"/>
+					<img class="image_actu" src="./Pictures/belote.jpg" alt="Paquet de cartes"/>
 					<p> <mark> Samedi 25 Novembre </mark> <br/> Venez en famille ou avec vos amis pour vous défier autour d'une table, serons au rendez-vous compétition et bonne humeur! </p>
 
 				</div>
