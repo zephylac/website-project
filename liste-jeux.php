@@ -8,14 +8,7 @@
         <body>
 	<?php  include './view/header.php';?>
   <div id="nav-mid">
-		<form id="formulaire" method="get" action="./liste-jeux.php">
-			<select name=order>
-				<option value="TypeJeux">Type de jeux</option>
-				<option value="Nom">Nom</option>
-				<option value="Ages">Age</option>
-			</select>
-			<input type="submit" value="filter"/><br />
-		</form>
+		<?php  include './view/research.php';?>
 		<?php  include './view/item-list.php';?>
 	</div>
 </div>
