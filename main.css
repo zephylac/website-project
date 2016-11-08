@@ -159,14 +159,19 @@ html{
 }
 
 #table-jeux a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+	background-color : #68A8FB;
+    color : black;
+    padding : 14px 25px;
+    text-align : center;
+    text-decoration : none;
+    display : inline-block;
 }
 
 #table-jeux a:hover, a:active {
-    background-color: red;
+	background-color : #68A8FE;
+	color : white;
+}
+
+.detail h2{
+	text-align : center;
 }
