@@ -2,7 +2,7 @@
 $verif = verif();
 if($verif != 1){
 	//On renvoie l'utilisateur à la page de connexion
-	header("location: connexion.php");
+	header("location: redirect.php");
 }
 else{
 	if(isset($_GET["jeux"])){
