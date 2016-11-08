@@ -11,8 +11,8 @@
 	}
 ?>
 <div id="header">
-			<img id="image" src="Pictures/jeux.png"/>
-			<img id="logo" src="Pictures/Logo.png"/>
+			<img id="image" src="Pictures/jeux.png" alt="baniere-ludo"/>
+			<img id="logo" src="Pictures/Logo.png" alt="logo-ludo"/>
 		</div>	
 		<div id="main_block">
 			<div id="nav-left">
