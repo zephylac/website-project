@@ -11,17 +11,21 @@
 			<form id="formulaire" method="post" action="../function/login.php">
 			  	<h2 id="identification" >Connexion</h2>
 					<table id="tableau">
+						
 						<tr>
-							<td class="form"> Numéro carte d'adhérent </td>
-						</tr>
-						<tr>
-							<td> <input class="case" name="id" type="text"/><br /> </td>
-						</tr>
 							<td class="form"> Nom </td>
 						</tr>
 						<tr>	
 							<td> <input class="case" name="nom" type="text"/><br /></td>
 						</tr>
+
+						<tr>
+							<td class="form"> Numéro carte d'adhérent </td>
+						</tr>
+						<tr>
+							<td> <input class="case" name="id" type="number"/><br /> </td>
+						</tr>
+						
 					</table>
 					<input class="bouton" type="submit" name="connect" value="Connection"/><br />
 				<br /><p> Vous êtes nouveau à la Ludothèque? </p>
