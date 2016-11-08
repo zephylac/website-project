@@ -17,9 +17,11 @@ $nom = array('Tout','Type de jeux','Nom','Age');
     	}
     	echo(">" . $nom[$i] . "</option>");
 }	
+echo '</select>';
+
 echo'
-</select>
 </form>
+
 <form id="form2" method="get">
 	<input type="hidden" name="att" value="'.$att.'">
 	<select name="value" onchange=\'document.forms["form2"].submit();\'>';
@@ -28,12 +30,7 @@ echo'
 		
 
 		while ($donnees = mysql_fetch_array($result)) {
-			if(!isset($_GET["value"])){
-				$value = '';	
-			}
-			else{
-				$value = $_GET["value"];
-			}
+			
 
 
 			if($value == $donnees[0]){
@@ -45,16 +42,5 @@ echo'
 		}
 		echo '
 	</select>
-</form>
-<form id="form3" cmethod="get" >
-	<input type="hidden" name="att" value="'.$att.'">
-	<input type="hidden" name="value" value="'.$value.'">
-
-	<select name=order onchange=\'document.forms["form3"].submit();\'>
-		<option value="TypeJeux">Type de jeux</option>
-		<option value="Nom">Nom</option>
-		<option value="Ages">Age</option>
-	</select>
-	<input type="submit" value="filter"/><br />
 </form>';
 ?>
