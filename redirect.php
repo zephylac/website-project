@@ -1,4 +1,5 @@
 <!DOCTYPE hmtl>
+<meta http-equiv="refresh" content="5;url=./view/connexion.php">
 <html>
         <head>
                 <meta charset="UTF8">
@@ -10,7 +11,7 @@
   <div id="nav-mid">
 		<p> Pour accèder à cette page, vous devez être connecté. Vous serez automatiquement redirigé versla page de connexion dans 5 secondes.</p>
     <br />
-    <p>Si vous n'êtes pas redirigé cliquez</p><a href="./view/connexion.php>ici</a>
+    <p>Si vous n'êtes pas redirigé cliquez <a href="./view/connexion.php">ici</a></p>
 	</div>
 </div>
 		
@@ -19,7 +20,3 @@
 		</div>
         </body>
 </html>
-<?php
-  sleep(5);
-  header("location: ./view/connexion.php");
-?>
