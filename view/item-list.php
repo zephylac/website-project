@@ -30,7 +30,7 @@
 	else{
 		$value = $_GET["value"];
 	}
-	$sql = "SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque WHERE ".$att."='".$value."' ORDER BY ".$order."";
+	$sql = "SELECT * FROM FC_grp1_Jeux NATURAL JOIN FC_grp1_JeuxLudotheque WHERE ".$att."='".$value."' ORDER BY Nom";
 	$result = db_request($sql);
 	
 	echo '<div id="table-jeux"><table ><tr>';
