@@ -28,8 +28,7 @@ else{
 	    		while ($donnees = mysql_fetch_array($result)){ 
 				$value = $donnees[0];    
 	    		}   
-	        	echo $value;
-	    		if($value == 0){
+	        	if($value == 0){
               			//Alert the user that the games chosen is no longer available
               			echo '<script language="javascript">';
               			echo 'alert("Le '.$item_withdraw.' n\'est plus disponible")';
@@ -42,6 +41,7 @@ else{
               			if($result){
                 			$sql = "UPDATE FC_grp1_JeuxLudotheque SET NbJeuxDispos = NbJeuxDispos - 1 WHERE Nom='".$item_withdraw."'";
                 			$result = db_request($sql);
+					header("location = ./userpanel.php");
               			}
             		}
             	//
